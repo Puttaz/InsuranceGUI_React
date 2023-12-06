@@ -6,13 +6,13 @@ function Users () {
     const[users, setUsers] = useState([])
     
     useEffect(() =>{
-        axios.get("http://localhost:8087/users")
+        axios.get("http://localhost:8080/users")
         .then(result => setUsers(result.data))
         .catch(err => console.log(err))
     },[])
     
     const handleDelete = (id) =>{
-        axios.delete('http://localhost:8087/users/'+id)
+        axios.delete('http://localhost:8080/users/'+id)
         .then(res => {console.log(res)
             window.location.reload()
         })
