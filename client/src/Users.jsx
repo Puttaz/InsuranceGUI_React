@@ -6,13 +6,13 @@ function Users () {
     const[users, setUsers] = useState([])
     
     useEffect(() =>{
-        axios.get("http://localhost:8087/users")
+        axios.get("http://localhost:8080/users")
         .then(result => setUsers(result.data))
         .catch(err => console.log(err))
     },[])
     
     const handleDelete = (id) =>{
-        axios.delete('http://localhost:8087/users/'+id)
+        axios.delete('http://localhost:8080/users/'+id)
         .then(res => {console.log(res)
             window.location.reload()
         })
@@ -21,8 +21,8 @@ function Users () {
     return (
         <div>
             <div className="d-flex vh-100 bg-primary justify-content-center align-items-center">
-                <div className="w-50 bg-white rounded p-3">
-                    <Link to="/createuser" className= "btn btn-success">Add +</Link>
+                <div className="w-90 bg-white rounded p-3">
+                    <Link to="/createuser" className= "btn btn-success">Create User</Link>
                     <table className="table">
                         <thead>
                             <tr>
@@ -50,7 +50,7 @@ function Users () {
                                         <td>{user.address}</td>
                                         <td>{user.userType}</td>
                                         <td>
-                                            <Link to={`/updateusers/${user._id}`} className= "btn btn-success">Update</Link>
+                                            <Link to={`/updateuser/${user.userId}`} className= "btn btn-success">Update</Link>
                                             <button className="btn btn-danger" onClick={(e) => handleDelete(user.userId)}>Delete</button></td>
                                     </tr>
                                 })

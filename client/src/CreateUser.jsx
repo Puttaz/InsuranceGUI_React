@@ -102,8 +102,8 @@ function CreateUser() {
           </div>
           <div className="mb-2">
             <label htmlFor="">User Type</label>
-            <select name="Gender" id="Gender" className="form-control" 
-            onChange={(e) => setGender(e.target.value)}>
+            <select name="UserType" id="UserType" className="form-control" 
+            onChange={(e) => setUserType(e.target.value)}>
               <option value="policyholder">Policy Holder</option>
               <option value="admin">Admin</option>
             </select>
