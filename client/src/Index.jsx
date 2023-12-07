@@ -52,7 +52,7 @@ function App() {
             Health Care Providers
           </MDBBtn>
 
-          <MDBBtn href="http://localhost:5173/index" className="mb-4 w-100" size="lg" style={{backgroundColor: '#3b5998'}}>
+          <MDBBtn href="http://localhost:5173/viewclaims" className="mb-4 w-100" size="lg" style={{backgroundColor: '#3b5998'}}>
             <MDBIcon fab icon="facebook-f" className="mx-2"/>
             Claims
           </MDBBtn>

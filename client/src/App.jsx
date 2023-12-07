@@ -10,6 +10,7 @@ import Policies from './Policy/Policies'
 import CreatePolicy from './Policy/CreatePolicy'
 import PolicyHolder from './PolicyHolder/PolicyHolder'
 import HealthProvider from './HealthProvider/HealthProvider'
+import Claims from './Claim/Claims.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,9 +24,9 @@ function App() {
           <Route path='/createuser' element = {<CreateUser />}></Route>
           <Route path='/updateuser/:id' element = {<UpdateUser />}></Route>
           <Route path='/viewpolicies' element = {<Policies />}></Route>
-          {/*<Route path='/createpolicy' element = {<CreatePolicy />}></Route>
-          <Route path='/updatepolicy/:id' element = {<UpdatePolicy />}></Route> 
-          <Route path='/viewclaim' element = {<CreateUser />}></Route>*/}
+          <Route path='/createpolicy' element = {<CreatePolicy />}></Route>
+          {/*<Route path='/updatepolicy/:id' element = {<UpdatePolicy />}></Route>*/}
+          <Route path='/viewclaims' element = {<Claims />}></Route>
           <Route path='/viewuproviders' element = {<HealthProvider />}></Route>
           <Route path='/viewpolicyholders' element = {<PolicyHolder />}></Route>
         </Routes>
