@@ -20,10 +20,12 @@ function Users () {
     }
     return (
         <div>
-            <div className="d-flex vh-100 bg-primary justify-content-center align-items-center">
-                <div className="w-90 bg-white rounded p-3">
-                    <Link to="/createuser" className= "btn btn-success">Create User</Link>
-                    <table className="table">
+            <div className="d-flex vh-100 justify-content-center align-items-center">
+                <div className="rounded p-3">
+                    <Link to="/createuser" className= "btn btn-success">Add New User +</Link>
+                    <br /><br />
+                    <h4>User List</h4>
+                    <table class="table table-success table-striped" >
                         <thead>
                             <tr>
                                 <th>First Name</th>

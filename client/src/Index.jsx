@@ -37,29 +37,29 @@ function App() {
             Users
           </MDBBtn>
 
-          <MDBBtn href="http://localhost:5173/updateusers/1" className="mb-4 w-100" size="lg" style={{backgroundColor: '#55acee'}}>
+          <MDBBtn href="http://localhost:5173/viewpolicies" className="mb-4 w-100" size="lg" style={{backgroundColor: '#55acee'}}>
             <MDBIcon fab icon="twitter" className="mx-2"/>
-            New Inusrance Policy
+            Inusrance Policies
           </MDBBtn>
 
-          <MDBBtn href="http://localhost:5173/index" className="mb-4 w-100" size="lg" style={{backgroundColor: '#3b5998'}}>
+          <MDBBtn href="http://localhost:5173/viewpolicyholders" className="mb-4 w-100" size="lg" style={{backgroundColor: '#3b5998'}}>
             <MDBIcon fab icon="facebook-f" className="mx-2"/>
             Policy Holders
           </MDBBtn>
 
-          <MDBBtn href="http://localhost:5173/index" className="mb-4 w-100" size="lg" style={{backgroundColor: '#55acee'}}>
+          <MDBBtn href="http://localhost:5173/viewuproviders" className="mb-4 w-100" size="lg" style={{backgroundColor: '#55acee'}}>
             <MDBIcon fab icon="twitter" className="mx-2"/>
-            Existing Users
+            Health Care Providers
           </MDBBtn>
 
           <MDBBtn href="http://localhost:5173/index" className="mb-4 w-100" size="lg" style={{backgroundColor: '#3b5998'}}>
             <MDBIcon fab icon="facebook-f" className="mx-2"/>
-            Help
+            Claims
           </MDBBtn>
 
           <MDBBtn href="http://localhost:5173/index" className="mb-4 w-100" size="lg" style={{backgroundColor: '#55acee'}}>
             <MDBIcon fab icon="twitter" className="mx-2"/>
-            Sign Up
+            Help
           </MDBBtn>
 
         </MDBCol>
